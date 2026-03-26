@@ -520,7 +520,15 @@
     <script>
     $(document).ready(function(){
         $('#example').DataTable({
-                searchPanes:{
+                dom:'f',
+                columnDefs:[{
+                    searchPanes:{
+                        show:false
+                    },
+                    targets:[5]
+                }
+                ]
+				searchPanes:{
                     cascadePanes:true,
                     dtOpts:{
                         dom:'tp',
@@ -529,7 +537,7 @@
                         searching:false
                     }
                 },
-                dom:'Pfrtip',
+                dom:'Prtip',
                 columnDefs:[{
                     searchPanes:{
                         show:false
