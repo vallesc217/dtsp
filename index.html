@@ -520,8 +520,10 @@
     <script>
     $(document).ready(function(){
         $('#example').DataTable({
-                dom:'f',
-               	searchPanes:{
+		dom:'f',
+		})
+		$('#example').DataTable({
+                searchPanes:{
                     cascadePanes:true,
                     dtOpts:{
                         dom:'tp',
