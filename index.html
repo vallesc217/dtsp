@@ -521,14 +521,7 @@
     $(document).ready(function(){
         $('#example').DataTable({
                 dom:'f',
-                columnDefs:[{
-                    searchPanes:{
-                        show:false
-                    },
-                    targets:[5]
-                }
-                ]
-				searchPanes:{
+               	searchPanes:{
                     cascadePanes:true,
                     dtOpts:{
                         dom:'tp',
